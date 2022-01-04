@@ -31,7 +31,7 @@ const App = () => {
     console.log("In App.js");
     console.log(expense);
     setExpenses((prevExpenses) => {
-      return [expense, ...expenses];
+      return [expense, ...prevExpenses];
     });
   };
 
